@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+   <head>
+    <title>
+        <%= title %>
+    </title>
+    <%- include partials/header.ejs %>
+  </head>
+  
+  <body>
+   
+  <%- include('partials/nav'); %>
+
+<main role="main">
+
+<div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">About</h1>
+    </div>
+  </div>
+  
+  <div class="container">
+        <div class="row">
+             <p>This application is created as a final project for SEIS 751 - Web Application Design and Development class.
+                The main characterstics of this application is to show how to use HTML 5 elements, canvas elements, svg elements,
+                video and audio elements, carasoul elements etc. This application is created using Node.js express application. 
+                I used mongodb atlas for the database and passport local strategy for the authentication system.
+            </p>
+         </div>
+    
+    <h2> Important links </h2>
+    <ul>
+        <li>
+            Content Map : <a href="/images/Content-Map.pdf">content map</a>
+        </li>
+        <li>
+            Wireframe : <a href="/images/Mockup.pdf">wireframe</a>
+        </li>
+        <li>
+            Project walkthrough : <a href="/images/Project-Walkthrough.pdf">project walkthrough</a>
+        </li>
+    </ul>
+    <h2> Credits </h2>
+        <ol>
+            <li> Images - <a href="https://all-free-download.com/free-photos/">dog image</a> </li>
+            <li> Videos - <a href="https://www.videvo.net/stock-video-footage/growing/">spinning orb video</a> </li>
+            <li> Animations - <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations">moving mouse animation</a> </li>
+        </ol>
+
+ </div>
+</main>
+   
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+  
+<%- include partials/footer.ejs %>
+</html>

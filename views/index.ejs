@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+        <%= title %>
+    </title>
+    <%- include('partials/header'); %>
+  </head>
+
+  <body>
+
+    <%- include('partials/nav'); %>
+    
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container justify-content-center ">
+          <h1 class="display-3">A simple application</h1>
+        </div>
+      </div>
+  
+  <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+  <!-- Indicators
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>-->
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    
+    <div class="item active">
+      
+      <div id="videosList">           
+
+        <div class="video">
+          <video src="/images/spinning-orb-light-rays-video.mov" type="video/mov">
+        </div>
+      </div>
+      
+      <script src="/javascripts/spinning-orb-video-animation.js"></script>
+     
+      <div class="carousel-caption">
+        <h3>Spinning Orbs</h3>
+        <p>Hover over the video!</p>
+      </div>
+    </div>
+    
+    <div class="item">
+
+        <div id="mouse-following-amination" class="shadow">
+           <script>
+            var cn;
+            //= document.getElementById('cw');
+            var c;
+            var u = 10;
+            const m = {
+                x: innerWidth / 2,
+                y: innerHeight / 2
+            };
+            window.onmousemove = function(e) {
+                m.x = e.clientX;
+                m.y = e.clientY;
+
+            }
+            function gc() {
+                var s = "0123456789ABCDEF";
+                var c = "#";
+                for (var i = 0; i < 6; i++) {
+                    c += s[Math.ceil(Math.random() * 15)]
+                }
+                return c
+            }
+            var a = [];
+            window.onload = function myfunction() {
+                cn = document.getElementById('cw');
+                c = cn.getContext('2d');
+
+                for (var i = 0; i < 10; i++) {
+                    var r = 30;
+                    var x = Math.random() * (innerWidth - 2 * r) + r;
+                    var y = Math.random() * (innerHeight - 2 * r) + r;
+                    var t = new ob(innerWidth / 2,innerHeight / 2,5,"red",Math.random() * 200 + 20,2);
+                    a.push(t);
+                }
+                //cn.style.backgroundColor = "#700bc8";
+
+                c.lineWidth = "2";
+                c.globalAlpha = 0.5;
+                resize();
+                anim()
+            }
+            window.onresize = function() {
+
+                resize();
+
+            }
+            function resize() {
+                cn.height = innerHeight;
+                cn.width = innerWidth;
+                for (var i = 0; i < 101; i++) {
+                    var r = 30;
+                    var x = Math.random() * (innerWidth - 2 * r) + r;
+                    var y = Math.random() * (innerHeight - 2 * r) + r;
+                    a[i] = new ob(innerWidth / 2,innerHeight / 2,4,gc(),Math.random() * 200 + 20,0.02);
+
+                }
+                //  a[0] = new ob(innerWidth / 2, innerHeight / 2, 40, "red", 0.05, 0.05);
+                //a[0].dr();
+            }
+            function ob(x, y, r, cc, o, s) {
+                this.x = x;
+                this.y = y;
+                this.r = r;
+                this.cc = cc;
+                this.theta = Math.random() * Math.PI * 2;
+                this.s = s;
+                this.o = o;
+                this.t = Math.random() * 150;
+
+                this.o = o;
+                this.dr = function() {
+                    const ls = {
+                        x: this.x,
+                        y: this.y
+                    };
+                    this.theta += this.s;
+                    this.x = m.x + Math.cos(this.theta) * this.t;
+                    this.y = m.y + Math.sin(this.theta) * this.t;
+                    c.beginPath();
+                    c.lineWidth = this.r;
+                    c.strokeStyle = this.cc;
+                    c.moveTo(ls.x, ls.y);
+                    c.lineTo(this.x, this.y);
+                    c.stroke();
+                    c.closePath();
+
+                }
+            }
+            function anim() {
+                requestAnimationFrame(anim);
+                c.fillStyle = "rgba(0,0,0,0.05)";
+                c.fillRect(0, 0, cn.width, cn.height);
+                a.forEach(function(e, i) {
+                    e.dr();
+                });
+
+            }
+           </script>
+        
+          <canvas id="cw"></canvas>
+        </div>
+      
+      <div class="carousel-caption">
+        <h3>Keep moving</h3>
+        <p>It's so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item" class="shadow">
+          <div id="confused-dog" class="shadow">
+          <img class="transition-image" src=/images/dog.jpg alt="">
+            <script src="/javascripts/dog-animation.js"></script>
+<Svg height="100" width="200">
+  <Symbol id="symbol" viewBox="0 0 150 110" width="100" height="50">
+    <G>
+    <Circle cx="50" cy="50" r="40" strokeWidth="8"/>
+    <!--<Circle
+      cx="90"
+      cy="60"
+      r="40"
+      strokeWidth="8"
+      stroke="green"
+      fill="white"
+    />-->
+    <Text x="10" y="20" fontWeight="bold" fontSize="100" fill="blue">
+     &#63
+    </Text>
+    </G>
+  </Symbol>
+  
+  <Use href="#symbol" x="80%" y="66%" opacity="0.31" fill="red" r="100"/>
+  <Use href="#symbol" x="10%" y="88%" width="100" fill="blue" height="100" />
+  <Use href="#symbol" x="23%" y="44%" width="500" fill="pink" height="150" />
+  <Use href="#symbol" x="40%" y="90%" width="700" fill="purple" height="50" />
+  <Use href="#symbol" x="30%" y="11%" width="200" fill="orange" height="250" />
+  <Use href="#symbol" x="60%" y="25%" width="300" fill="orange" height="750" />
+  <Use href="#symbol" x="5%" y="5%" opacity="0.31" fill="purple" r="400"/>
+  <Use href="#symbol" x="70%" y="10%" width="400" fill="black" height="300" />
+  <Use href="#symbol" x="2%" y="90%" width="150" fill="green" height="250" />
+  <Use href="#symbol" x="90%" y="30%" width="250" fill="violet" height="200" />
+  <Use href="#symbol" x="40%" y="60%" width="5000" fill="orange" height="250" />
+  <Use href="#symbol" x="12%" y="70%" width="99" fill="yellow" height="750" />
+</Svg>
+
+       </div>
+      <div class="carousel-caption">
+        <h3>Confused dog</h3>
+        <p>Hover over this dog!</p>
+      </div>
+    </div>
+
+   <!-- <div class="item">
+      <img src="ny.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</main>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+<%- include('partials/footer'); %>
+    
+</body>
+</html>

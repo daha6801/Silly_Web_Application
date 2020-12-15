@@ -1,0 +1,276 @@
+#confused-dog {
+  background-color:black;
+  height: 800px;
+  width: 800px;
+  position: relative;
+  margin:0 auto;
+}
+
+#confused-dog img, svg {
+  position:absolute;
+  border: red;
+  width: 90%;
+  height:90%;
+}
+
+/*#symbol {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 150px;
+}
+
+#block1 {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 150px;
+}
+
+#block2 {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 200px;
+}
+
+#block3 {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 250px;
+}
+#block4 {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 300px;
+}
+#block5 {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 350px;
+}
+#block6 {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 400px;
+}
+#block7 {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 450px;
+}
+#block8 {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 500px;
+}
+
+#block9 {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 550px;
+}
+
+#block10 {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 600px;
+}
+
+#block11 {
+  position:relative;
+  background-color: #bca;
+  width: 15px;
+  border: 1px solid green;
+  left: 650px;
+}*/
+
+@font-face {
+  font-family: 'Architects Daughter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Architects Daughter Regular'), local('ArchitectsDaughter-Regular'), url(https://fonts.gstatic.com/s/architectsdaughter/v11/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg4w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Economica';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Economica'), local('Economica-Regular'), url(https://fonts.gstatic.com/s/economica/v8/Qw3fZQZaHCLgIWa29ZBbNsIB.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Special Elite Regular'), local('SpecialElite-Regular'), url(https://fonts.gstatic.com/s/specialelite/v11/XLYgIZbkc4JPUL5CVArUVL0ntnAOSA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Sacramento';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sacramento/v8/buEzpo6gcdjy0EiZMBUG4CMf_exL.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Sacramento';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sacramento/v8/buEzpo6gcdjy0EiZMBUG4C0f_Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* thai */
+@font-face {
+  font-family: 'Itim';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/itim/v4/0nknC9ziJOYe8BdAkP7Z.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Itim';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/itim/v4/0nknC9ziJOYe8AxAkP7Z.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Itim';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/itim/v4/0nknC9ziJOYe8A1AkP7Z.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Itim';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/itim/v4/0nknC9ziJOYe8ANAkA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.navbar a {
+  font-family: 'Special Elite';
+}
+
+h1{
+    font-family: 'Architects Daughter';
+    font-size: 70px;
+    text-align: center;
+}
+
+h2,h3 {
+    font-family: 'Architects Daughter';
+    font-size: 50px;
+}
+
+main {
+  font-family: 'Itim';
+  font-size: 35px;
+}
+
+footer {
+    font-family: 'Special Elite';
+    text-align: center;
+}
+
+#cw {
+  background-color:red;
+  height: 800px;
+  width: 800px;
+  position: relative;
+  margin:0 auto;
+}
+
+#cw canvas {
+  position:absolute;
+  border: red;
+  width: 80%;
+  height:80%;
+  vertical-align: middle;
+}
+
+#mouse-following-amination {
+    background-color: rgba(0,0,0,0.05);
+    height: 800px;
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*#spinning-video {
+  background-color:tan;
+  height: 800px;
+  width: 800px;
+  position: relative;
+  margin:0 auto;
+}
+
+#spinning-video  video {
+ position:absolute;
+  border: red;
+  width: 80%;
+  height:80%;
+  overflow: hidden;
+}
+
+video::-webkit-media-controls {
+    display:none !important;
+}*/
+#videosList {
+  overflow: hidden;
+  height: 800px;
+  width: 800px;
+  position: relative;
+  margin:0 auto;
+}
+
+.video {
+  /*background-image: url('https://img.youtube.com/vi/nZcejtAwxz4/maxresdefault.jpg');*/
+  background-color:tan;
+  height: 800px;
+  width: 800px;
+  position: absolute;
+  margin:0 auto;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+.circle-blue {
+    background: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

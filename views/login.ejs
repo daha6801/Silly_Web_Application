@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+	<%- include('partials/header'); %>
+	<link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+  </head>
+  
+  <body>
+	
+    <%- include('partials/nav'); %>
+
+<main role="main">
+
+<div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Login Page</h1>
+      <p>This page is for user login</p>
+    </div>
+  </div>
+ 
+ <div class="container"> 
+ <form action="/contactus/login" method="POST" class="validated-form" novalidate>
+    <div class="mb-3">
+        <label class="form-label" for="username">Username</label>
+        <input class="form-control" type="text" id="username" name="username" placeholder="username" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="password">Password</label>
+        <input class="form-control" type="password" id="password" name="password" placeholder="password" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <button class="btn btn-success">Login</button>
+</form>
+</div>
+</main>
+
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+<div class="container">
+    <%- include('partials/footer'); %>
+</div>
+</body>
+</html>

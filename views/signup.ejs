@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+	<%- include('partials/header'); %>
+	<link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+  </head>
+  
+  
+  <body>
+       <%- include('partials/nav'); %>
+      
+    <main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Register</h1>
+      <p>This page is for users to register</p>
+    </div>
+  </div>
+
+  <div class="container">
+   <form action="/contactus/signup" method="POST" class="validated-form" novalidate>
+    <div class="mb-3">
+        <label class="form-label" for="username">Username</label>
+        <input class="form-control" type="text" id="username" name="username" placeholder="username" required >
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-control" type="email" id="email" name="email" placeholder="Enter email" required>
+        <small id="emailHelp" class="form-text text-muted">Email is required</small>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="password">Password</label>
+        <input class="form-control" type="password" id="password" name="password" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <button class="btn btn-success">Register</button>
+    </form>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+ </body>
+  <%- include('partials/footer'); %>
+</html>
