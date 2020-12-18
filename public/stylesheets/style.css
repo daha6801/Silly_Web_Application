@@ -182,6 +182,14 @@
   font-family: 'Special Elite';
 }
 
+.navbar-custom { 
+    background-color: rgba(77, 182, 172); 
+} 
+
+.navbar-text { 
+    color: green; 
+} 
+        
 h1{
     font-family: 'Architects Daughter';
     font-size: 70px;
@@ -196,11 +204,13 @@ h2,h3 {
 main {
   font-family: 'Itim';
   font-size: 35px;
+  color: rgb(255, 87, 51);
 }
 
 footer {
-    font-family: 'Special Elite';
-    text-align: center;
+  background-color: rgba(250, 215, 160);
+  font-family: 'Special Elite';
+  text-align: center;
 }
 
 #cw {
@@ -268,9 +278,11 @@ video::-webkit-media-controls {
     display:none !important;
 }
 
-.circle-blue {
-    background: blue;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+/* Style all font awesome icons */
+.fa {  
+  padding: 20px;  
+  font-size: 30px;  
+  width: 50px;  
+  text-align: center;  
+  text-decoration: none;
 }
