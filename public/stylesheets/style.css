@@ -13,97 +13,6 @@
   height:90%;
 }
 
-/*#symbol {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 150px;
-}
-
-#block1 {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 150px;
-}
-
-#block2 {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 200px;
-}
-
-#block3 {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 250px;
-}
-#block4 {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 300px;
-}
-#block5 {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 350px;
-}
-#block6 {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 400px;
-}
-#block7 {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 450px;
-}
-#block8 {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 500px;
-}
-
-#block9 {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 550px;
-}
-
-#block10 {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 600px;
-}
-
-#block11 {
-  position:relative;
-  background-color: #bca;
-  width: 15px;
-  border: 1px solid green;
-  left: 650px;
-}*/
-
 @font-face {
   font-family: 'Architects Daughter';
   font-style: normal;
@@ -180,14 +89,15 @@
 
 .navbar a {
   font-family: 'Special Elite';
+  background-color: olive;
 }
 
 .navbar-custom { 
-    background-color: rgba(77, 182, 172); 
+    background-color: black; 
 } 
 
 .navbar-text { 
-    color: green; 
+    color: rgb(112, 106, 146); 
 } 
         
 h1{
@@ -204,11 +114,11 @@ h2,h3 {
 main {
   font-family: 'Itim';
   font-size: 35px;
-  color: rgb(255, 87, 51);
+  color: rgb(43, 43, 43);
 }
 
 footer {
-  background-color: rgba(250, 215, 160);
+  background-color: olive;
   font-family: 'Special Elite';
   text-align: center;
 }
@@ -237,25 +147,6 @@ footer {
     margin: 0 auto;
 }
 
-/*#spinning-video {
-  background-color:tan;
-  height: 800px;
-  width: 800px;
-  position: relative;
-  margin:0 auto;
-}
-
-#spinning-video  video {
- position:absolute;
-  border: red;
-  width: 80%;
-  height:80%;
-  overflow: hidden;
-}
-
-video::-webkit-media-controls {
-    display:none !important;
-}*/
 #videosList {
   overflow: hidden;
   height: 800px;

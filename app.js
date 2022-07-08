@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var http = require('http')
 
 const mongoose = require('mongoose');
 const session = require('express-session');
@@ -18,6 +19,13 @@ var contactUsRouter = require('./routes/contactus');
 var user = require('./models/users');
 
 var app = express();
+//app.listen(3000, "184.105.9.193");
+app.set('port', process.env.PORT || 3000);
+
+http.createServer(app).listen(app.get('port'),
+  function(){
+    console.log("Express server listening on port " + app.get('port'));
+});
 
 // Connecting to the database using mongooose
 const url = 'mongodb+srv://user:P@ssw0rd@cluster0.4gkkd.mongodb.net/mysilly-app-database?retryWrites=true&w=majority'

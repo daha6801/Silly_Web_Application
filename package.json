@@ -1,5 +1,5 @@
 {
-  "name": "silly-app-node",
+  "name": "pet-services-app",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -20,5 +20,18 @@
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.0.1",
     "react-native-svg": "^12.1.0"
-  }
+  },
+  "description": "This is an application that will allow users to register their pets and order various services.",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daha6801/pet-services-application-rashmi.git"
+  },
+  "author": "Rashmi Dahal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daha6801/pet-services-application-rashmi/issues"
+  },
+  "homepage": "https://github.com/daha6801/pet-services-application-rashmi#readme"
 }
